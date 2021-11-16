@@ -1,0 +1,76 @@
+@font-face{
+    font-family: Karate;
+    src: url("../FUENTES/Karate.ttf");
+}
+@import url("normalize.css");
+:root{
+    --tamaño-logo: 80px;
+    --tamaño-logo-grande: 170px;
+
+    --tamaño-títulos: 35px;
+    --tamaño-subtítulos: 25px;
+    --tamaño-párrafos: 16px;
+
+    --color-primario: #D80A00;
+    --color-secundario: #DB6D00;
+    --color-terciario: #FF625D;
+
+    --sobra-basica: 0 5px 8px 5px rgba(0, 0, 0, .25);
+
+    --tipografia-título: 'Karate';
+    --tipografia-párrafos: 'Cabin', sans-serif;
+
+    --linea-abajo: 3px solid black;
+
+    --transicion: .2s ease-in;
+    --transicion-larga: .5s ease-in;
+}
+body{
+    font-family: var(--tipografia-párrafos);
+    min-height: 97.6vh;
+    
+}
+
+h1{
+    font-size: 60px;
+ }
+
+ h2{
+     font-size: var(--tamaño-títulos);
+ }
+a{
+    color: black;
+}
+input[type="submit"]{
+    font-family: 'Karate';
+    border: 3px solid var(--color-primario);
+    padding: 5px 10px;
+}
+table.lista {
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.lista td {
+    padding: 3px 2px;
+    white-space: nowrap;
+  }
+  table.lista tbody td {
+    font-size: 18px;
+  }
+  table.lista>tbody>tr{
+    border-bottom: 2px solid rgb(116, 116, 116);
+  }
+  table.lista>tbody>tr:hover{
+    background:  rgb(187, 187, 187);
+    color: white;
+  }
+  table.lista>tbody>tr>.celda-larga{
+      width: 40%;
+  }
+
+
+
+

@@ -1,0 +1,19 @@
+@import url("administrador.css");
+
+.cabecera{
+    display: flex;
+    align-items: center;
+}
+.cabecera>h2{
+    line-height: 0;
+    margin-left: 20px;
+}
+
+.contenido-tabla{
+    height: 75vh;
+    border: 2px solid rgb(116, 116, 116);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}

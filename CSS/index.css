@@ -1,0 +1,137 @@
+@import url("principal.css");
+body{
+    background: url("../img/fondo1.jpeg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+.img-center{
+    width: 100%;
+    text-align:center;
+}
+.logoprincipal{
+    width: var(--tamaño-logo-grande);
+}
+.divprincipal{
+    padding: 50px 20px;
+    width: 30vw;
+    filter: alpha(opacity=50); 
+    margin: auto;
+    border-radius: 0 50px;
+    background: rgba(247, 247, 247, 0.73);
+}
+.frm-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.contenedor-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    width: 100%;
+    position: relative;
+}
+.dato{
+    width: 100%;
+}
+.boton{
+    font-size: var(--tamaño-subtítulos);
+    background: none;
+    color: var(--color-primario);
+    border: 3px solid var(--color-primario);
+    outline: none;
+    padding: 8px 25px;
+    transition: var(--transicion);
+}
+.boton:hover{
+    background: var(--color-primario);
+    color: white;
+}
+.enlace{
+    margin: 20px;
+}
+.enlace>a{
+    color: white;
+    font-weight: bold;
+    transition: var(--transicion);
+}
+.enlace>a:hover{
+    color: var(--color-secundario);
+}
+
+
+label{ 
+    width: 100%;
+    color: black;
+    cursor: text;
+    position: absolute;
+    transition: 0.2s all;
+    font-size: 20px;
+    left: 0;
+    text-align: left;
+    pointer-events: none;
+    margin-left: 20px;  
+    transform: translateY(-110%);
+}
+ 
+
+.label-textarea{
+    transform: translateY(-130%);
+}
+input{
+    margin-top: 20px;
+}
+input[type="submit"]{
+    font-family: 'Karate';
+}
+input[type="text"],
+input[type="password"],
+input[type="textarea"]{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-top: 20px;
+    border-bottom: var(--linea-abajo);
+    transition: var(--transicion);
+    background: none;
+    font-size: var(--tamaño-párrafos);
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="textarea"]:focus{
+    border-color: var(--color-primario);
+}
+input[type="text"]:focus + label,
+input[type="password"]:focus + label,
+input[type="textarea"]:focus + label{
+    color: var(--color-primario);
+    font-size: var(--tamaño-párrafos);
+    transform: translateY(-250%);
+}
+input[type="text"]:valid + label,
+input[type="password"]:valid + label,
+input[type="textarea"]:valid + label{
+    color: black;
+    transform: translateY(-250%);
+    font-size: var(--tamaño-párrafos);
+}
+textarea:focus + label{
+    color: var(--color-primario);
+    font-size: var(--tamaño-párrafos);
+    transform: translateY(-700%);
+}
+textarea:valid + label{
+    color: black;
+    transform: translateY(-700%);
+    font-size: var(--tamaño-párrafos);
+}

@@ -1,0 +1,8 @@
+@import url("opAdmyGes.css");
+
+.contenedor-datos>.datos-columna3>.boton-agregar>button{
+    transform: translateY(25%);
+}
+.divboton input{
+    transform: translateY(0%);
+}
